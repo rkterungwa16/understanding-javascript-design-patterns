@@ -5,34 +5,41 @@ Factory
     Its simplicity
     Its usability
     Its small surface area
- 
-  Invoking a factory instead of directly creating a new object
-  from a prototype using the new operator or Object.create()
-  is much more convenient and flexible in several respects.
 
-  Factory allows us to separate the object creation from Its
-  implementation.
 
-  A factory wraps a new instance giving us more flexibility and
-  control in the way we do it.
 
-  The consumer of the factory is totally agnostic about how
-  the creation of the instance is carried out.
+  Usecase for Factory patterns
+    1. A Generic interface for creating Objects
+    2. A Mechanism to enforce encapsulation
 
-  By using 'new', we are binding our code to one specific way
-  of creating an object
+  A Generic Interface For Creating Objects
+    Invoking a factory instead of directly creating a new object
+    from a prototype using the new operator or Object.create()
+    is much more convenient and flexible in several respects.
 
-  Example
-  function createImage(name) {
-      if (name.match(/\.jpeg$/)){
-          return new JpegImage(name)
-      } else {
+    Factory allows us to separate the object creation from Its
+    implementation.
+
+    A factory wraps a new instance giving us more flexibility and
+    control in the way we do it.
+
+    The consumer of the factory is totally agnostic about how
+    the creation of the instance is carried out.
+
+    By using 'new', we are binding our code to one specific way
+    of creating an object
+
+    Example
+    function createImage(name) {
+        if (name.match(/\.jpeg$/)){
+            return new JpegImage(name)
+        } else {
           throw new Exception('Unsupported format')
-      }
-  }
+        }
+    }
 
-  Factory allows us to not expose the constructors of the
-  objects it creates, and prevents them from being extended
-  or modified (small surface area)
+    Factory allows us to not expose the constructors of the
+    objects it creates, and prevents them from being extended
+    or modified (small surface area)
 
     Keeping constructors private
