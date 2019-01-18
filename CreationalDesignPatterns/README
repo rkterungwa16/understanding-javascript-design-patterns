@@ -1,4 +1,4 @@
-Factory
+Creational Design Pattern
 
   In JavaScript, the functional paradigm is often preffered
   to a purely object-oriented design because of:
@@ -11,5 +11,48 @@ Factory
     2. Constructor function
     3. Es6 Class definition
     4. Invoke Object.create() method
+
+  Literal notation
+    Advantages
+      Simplicity
+    Disadvantages
+      We need to specify each property and method
+
+      Not suitable to create many similar objects
+
+      Limited to the creation of a single object
+
+  Constructor function/Classes
+    A constructor function does not have a return value
+
+    The 'new' operator causes the return of a new object
+    instance from the current value of 'this'
+
+    If we create a constructor returning a primitive value,
+    such as a string or a number, it will be ignored
+
+    If we create a constructor returning an object, the
+    object will be returned, and the object bound to this
+    keyword will be lost
+
+    Advantages
+      Define an object template from which we can create
+      as many objects as we want.
+
+      Optimizes memory usage by sharing the method's code
+      among their instances
+
+    Disadvantages
+      'new' operator is not consistent with JavaScript's
+      functional nature.
+
+  Object.create() method
+    Advantages
+      Like constructor/class approach, allow us to
+      create objects from a prototype.
+
+      It is easier and more consistent with JavaScript
+      nature.
+
 
 

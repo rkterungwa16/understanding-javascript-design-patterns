@@ -1,0 +1,40 @@
+Singleton
+
+  A class of which only a single instance can exist
+
+  Single occurrence of an object throughout the application
+  life.
+
+  Example Use cases for singletons
+    Configuration manager
+    Cache manager
+    Log manager
+    Database connection pool: The pool manages the creation,
+    destruction, and lifetime of all database connections for
+    the entire application
+
+  Caution:
+    Use singletons with care since they are global variables.
+    Poor usage can risk polluting the global environment.
+
+  Singleton object provides a global point of access to
+  itself
+
+  Only one instance of the object must exist
+
+  Creating Singletons
+    Using Literal Notation
+      it can be accessed everywhere in the application if
+      created in a global context
+
+    Disadvantages
+      We are not sure that this object will be used during
+      the application life.
+        If a particular execution flow of the application does
+        not use our object, we unnecessarily waste the
+        system's resources.
+
+      If our Singleton object has to manage internal state,
+      using literal notation is not the best way.
+
+
