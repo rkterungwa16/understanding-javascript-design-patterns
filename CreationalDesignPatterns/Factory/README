@@ -53,3 +53,14 @@ Factory
         that manage, maintain, or manipulate collections of
         objects that are different but at the same time have
         many characteristics in common
+
+  Parts of a Factory pattern
+
+    The Client: This is the object that needs another object
+    of a specific category
+
+    The Factory: This is the object able to generate objects of
+    a number of categories
+
+    The product: This object created by the factory and returned
+    to the client
