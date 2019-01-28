@@ -1,0 +1,31 @@
+A proxy is an object that controls access to another object
+called a subject
+
+The proxy and the subject have an identical interface and
+this allows us to transparently swap one for the other.
+
+A proxy intercepts all or some of the operations that are
+meant to be executed on the subject, augmenting or
+complementing their behaviour.
+
+A proxy forwards each operation to the subject, enhancing
+its behaviour with additional pre-processing or post-
+processing.
+
+Proxying does not involve proxying between classes.
+  The proxy pattern involves wrapping actual instances
+  of the subject, thus preserving its state.
+
+Example use case for Proxy illustration
+  A subject that is slow to respond to client due to
+  dependency on some remote resource (resulting in
+  network latency) or when an object takes a long time
+  to load.
+
+  A proxy can be used here to implement a cache.
+  Response to requests that are repeated are
+  saved thus avoiding calls to remote source
+  every time.
+
+ES6 Proxy
+
