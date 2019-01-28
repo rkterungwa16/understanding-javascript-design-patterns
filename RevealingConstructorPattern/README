@@ -1,0 +1,31 @@
+Example usage in Promises
+
+  new Promise(function (resolve, reject) => {
+    // Use 'resolve' to resolve Promise
+    // Use 'reject' to reject Promise
+  })
+
+    Promise constructor takes a single function as its sole
+    parameter (called the 'executor function')
+
+    The function is immediately called with two arguments,
+    resolve and reject
+
+    'resolve' and 'reject' both have the capability to
+    manipulate the internal state of the newly-constructed
+    Promise instance 'p'
+
+    The function is called by the internal implementation of
+    the Promise constructor. It is used to allow the
+    constructing code to manipulate only a limited part
+    of the internal state of the promise under construction.
+
+    The executor function serves as a mechanism to expose the
+    resolve and reject functions so that they can be invoked
+    to change the internal state of the object.
+
+  Promise constructor is revealing its internal capabilities,
+  but only to the code that constructs the promise in question.
+
+    The ability to resolve or reject the promise is only
+    revealed to the constructing code.
