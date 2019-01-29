@@ -27,13 +27,12 @@ function invariant (key, action) {
 function proxied () {
   return {
     get (target, key) {
-      console.log('target', target)
       invariant(key, 'get')
       return target[key]
     },
     set (target, key, value) {
-      console.log('key value', key)
       invariant(key, 'set')
+      target[key] = value
       return true
     }
   }
