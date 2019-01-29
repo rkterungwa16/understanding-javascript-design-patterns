@@ -9,3 +9,5 @@
   - **[10 use cases for es6 Proxy](http://dealwithjs.io/es6-features-10-use-cases-for-proxy/)**
 
   - **[Proxy validation library](https://hackernoon.com/how-i-made-a-validation-library-using-es6-proxy-59df82c1a4c0)**
+
+  -**[Es6 Proxies in depth](https://ponyfoo.com/articles/es6-proxies-in-depth)**

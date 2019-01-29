@@ -46,6 +46,13 @@ ES6 Proxy
     validation
     access control
 
+  Without traps in handlers proxies don't do much
+
+  Example Es6 proxy traps
+    1. get: used log every attempt to pull a value out of a
+    property
+    2. set: used to mutate subject property values
+
 USE CASES FOR ES6 PROXY
   Adding default values to an object.
     When we ask for a missing key we get the default value
