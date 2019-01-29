@@ -28,4 +28,26 @@ Example use case for Proxy illustration
   every time.
 
 ES6 Proxy
+  A proxy object is used to define custom behaviour for
+  fundamental operations
+
+  Wrap an object to intercept its basic operations, like
+  getting a property value.
+
+  Provide a handler object with traps for the operations we
+  want to intercept
+
+  The operations we don't define a trap for will be
+  forwarded to the original object.
+
+  Users of a proxy do not have access to the original
+  object, which makes it a good tool for
+    encapsulation
+    validation
+    access control
+
+USE CASES FOR ES6 PROXY
+  Adding default values to an object.
+    When we ask for a missing key we get the default value
+
 
