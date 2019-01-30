@@ -10,4 +10,8 @@
 
   - **[Proxy validation library](https://hackernoon.com/how-i-made-a-validation-library-using-es6-proxy-59df82c1a4c0)**
 
-  -**[Es6 Proxies in depth](https://ponyfoo.com/articles/es6-proxies-in-depth)**
+  - **[ES6 Proxies in depth](https://ponyfoo.com/articles/es6-proxies-in-depth)**
+
+  - **[ES6 Reflection in depth](https://ponyfoo.com/articles/es6-reflection-in-depth)**
+
+  - **[ES6 Proxy Traps in depth](https://ponyfoo.com/articles/es6-proxy-traps-in-depth)**

@@ -1,0 +1,25 @@
+Reflect is a static object, which means it can't be
+invoked with 'new' or called normally
+
+Reflection features in ES5
+
+  1. Array.isArray
+  2. Object.getOwnPropertyDescriptor
+  3. Object.keys
+
+  In ES5, the object is a repository of reflection methods
+
+The _traps in ES6 proxies are mapped one-to-one to the
+Reflect API. For every trap, there is a matching reflection
+method in Reflect
+
+proxy traps and Reflection methods have same arguments and
+their return values match
+
+Common Reflection methods
+  1. Reflect.defineProperty
+  2. Reflect.deleteProperty
+  3. Reflect.setPrototypeOf
+
+Example use case for ES6 Reflection
+  Creating arbitrary Argument Lists for constructor functions

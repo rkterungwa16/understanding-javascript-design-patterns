@@ -35,3 +35,15 @@ myObj.name = 'Bob'
 log()
 delete myObj.name
 log()
+
+const hand = {
+  get () {
+
+    return Reflect.get(...arguments)
+  }
+}
+
+const target = { a: 'b' }
+const prox = new Proxy({}, hand)
+
+console.log('well', prox.a)
